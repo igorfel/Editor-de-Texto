@@ -5,8 +5,8 @@
 #include <QFile>
 #include <QFileDialog>
 #include <iostream>
-#include <fstream>
 #include <QTextStream>
+#include <QMessageBox>
 
 namespace Ui {
 class MainWindow;
@@ -19,11 +19,13 @@ public slots:
     void openFile();
     void novoArquivo();
     void saveFile();
+    void saveAs();
+    void sair();
 
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QString titulo, texto;
+    QString editedOrNo, nomeArquivo, texto, textoEspelho;
 
 private:
     Ui::MainWindow *ui;
