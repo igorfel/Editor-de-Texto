@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>524</width>
-    <height>352</height>
+    <width>377</width>
+    <height>438</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>100</width>
+    <height>0</height>
+   </size>
   </property>
   <property name="palette">
    <palette>
@@ -425,8 +437,21 @@
     </disabled>
    </palette>
   </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icone.png</normaloff>icone.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>82</width>
+    <height>82</height>
+   </size>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -446,7 +471,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>524</width>
+     <width>377</width>
      <height>21</height>
     </rect>
    </property>
@@ -462,7 +487,16 @@
     <addaction name="separator"/>
     <addaction name="actionSair"/>
    </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionVers_o_Alpha"/>
+    <addaction name="separator"/>
+    <addaction name="actionIgor_Felipe"/>
+   </widget>
    <addaction name="menuArquivo"/>
+   <addaction name="menuSobre"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionAbrir">
@@ -497,6 +531,16 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionVers_o_Alpha">
+   <property name="text">
+    <string>Versão -Alpha</string>
+   </property>
+  </action>
+  <action name="actionIgor_Felipe">
+   <property name="text">
+    <string>Igor Felipe</string>
    </property>
   </action>
  </widget>
