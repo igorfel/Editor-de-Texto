@@ -17,7 +17,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 public slots:
     void openFile();
-    void novoArquivo();
+    void newFile();
     void saveFile();
     void saveAs();
     void sair();
